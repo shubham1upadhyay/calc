@@ -20,11 +20,23 @@ function isDigit(input) {
   }
 
 function sum(){
-    if(!isDigit(num1) || !isDigit(num2))
+    if(!num1  || !isDigit(num1))
     {
         setEMsg1("Error!")
         setEMsg('');
         setResult('Num1 Cannot Be Empty')
+    }
+    else if(!num2  || !isDigit(num1))
+    {
+        setEMsg1("Error!")
+        setEMsg('');
+        setResult('Num2 Cannot Be Empty')
+    }
+    else if(!isDigit(num1) || !isDigit(num2))
+    {
+        setEMsg1("Error!")
+        setEMsg('');
+        setResult('Please Enter Valid Input')
     }
     else{
            setEMsg1('')
@@ -33,11 +45,23 @@ function sum(){
     }
 }
 function minus(){
-    if(!isDigit(num1) || !isDigit(num2))
+    if(!num1 || !isDigit(num1))
     {
         setEMsg1("Error!")
         setEMsg('');
         setResult('Num1 Cannot Be Empty')
+    }
+    else if(!num2 || !isDigit(num2))
+    {
+        setEMsg1("Error!")
+        setEMsg('');
+        setResult('Num2 Cannot Be Empty')
+    }
+    else if(!isDigit(num1) || !isDigit(num2))
+    {
+        setEMsg1("Error!")
+        setEMsg('');
+        setResult('Please Enter Valid Input')
     }
     else{
            setEMsg1('')
@@ -46,11 +70,23 @@ function minus(){
     }
 }
 function multiply(){
-    if(!isDigit(num1) || !isDigit(num2))
+    if(!num1 || !isDigit(num1))
     {
         setEMsg1("Error!")
         setEMsg('');
         setResult('Num1 Cannot Be Empty')
+    }
+    else if(!num2 || !isDigit(num2))
+    {
+        setEMsg1("Error!")
+        setEMsg('');
+        setResult('Num2 Cannot Be Empty')
+    }
+    else if(!isDigit(num1) || !isDigit(num2))
+    {
+        setEMsg1("Error!")
+        setEMsg('');
+        setResult('Please Enter Valid Input')
     }
     else{
            setEMsg1('')
@@ -59,11 +95,23 @@ function multiply(){
     }
 }
 function divide(){
-    if(!isDigit(num1) || !isDigit(num2))
+    if(!num1 || !isDigit(num1))
     {
         setEMsg1("Error!")
         setEMsg('');
         setResult('Num1 Cannot Be Empty')
+    }
+    else if(!num2 || !isDigit(num2))
+    {
+        setEMsg1("Error!")
+        setEMsg('');
+        setResult('Num2 Cannot Be Empty')
+    }
+    else if(!isDigit(num1) || !isDigit(num2))
+    {
+        setEMsg1("Error!")
+        setEMsg('');
+        setResult('Please Enter Valid Input')
     }
     else{
            setEMsg1('')
