@@ -50,3 +50,15 @@ body{
     font-size:20px;
     font-weight:700;
 }
+
+
+
+@media screen and (max-width:768px) {
+    
+    .parent{
+        width: 100%;
+    }
+    input{
+        padding: 0px;
+    }
+}
