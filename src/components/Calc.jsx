@@ -1,5 +1,5 @@
 import '../makeup/Calc.css'
-import { react, useState } from "react";
+import {useState } from "react";
 const Calc = () => {
 
 const [num1, setNum1] = useState('')
@@ -20,7 +20,7 @@ function isDigit(input) {
   }
 
 function sum(){
-    if(!num1 || !num2)
+    if(!isDigit(num1) || !isDigit(num2))
     {
         setEMsg1("Error!")
         setEMsg('');
@@ -33,7 +33,7 @@ function sum(){
     }
 }
 function minus(){
-    if(!num1 || !num2)
+    if(!isDigit(num1) || !isDigit(num2))
     {
         setEMsg1("Error!")
         setEMsg('');
@@ -46,7 +46,7 @@ function minus(){
     }
 }
 function multiply(){
-    if(!num1 || !num2)
+    if(!isDigit(num1) || !isDigit(num2))
     {
         setEMsg1("Error!")
         setEMsg('');
@@ -59,7 +59,7 @@ function multiply(){
     }
 }
 function divide(){
-    if(!num1 || !num2)
+    if(!isDigit(num1) || !isDigit(num2))
     {
         setEMsg1("Error!")
         setEMsg('');
